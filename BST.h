@@ -29,7 +29,6 @@ class BinarySearchTree
         //! Оператор сравнения ==
         bool operator==(const Node &other) const;
         void clear();
-        size_t height() const;
 
         //! Вывод в консоль поддерева, где текущий узел - корень
         void output_node_tree() const;
@@ -42,7 +41,7 @@ class BinarySearchTree
         Node *parent = nullptr; //!< родительский узел
         Node *left = nullptr;   //!< левый потомок
         Node *right = nullptr;  //!< правый потомок
-	unsigned height = 1;
+	    unsigned height = 1;
         unsigned getHeight();
         int balanceFactor();
         void fixHeight();
