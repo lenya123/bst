@@ -842,17 +842,12 @@ void BinarySearchTree::output_tree()
         _root -> output_node_tree();
     }
 }
-size_t BinarySearchTree::Node::height() const
-{
-    size_t left_height = left -> height();
-    size_t right_height = right -> height();
-    return 1 + (left_height > right_height ? left_height : right_height);
-}
+
 size_t BinarySearchTree::max_height() const
 {
     if (!_root)
     {
         return 0;
     }
-    return _root -> height();
+    return _root -> height;
 }
