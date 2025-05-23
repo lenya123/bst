@@ -42,7 +42,7 @@ class BinarySearchTree
         Node *parent = nullptr; //!< родительский узел
         Node *left = nullptr;   //!< левый потомок
         Node *right = nullptr;  //!< правый потомок
-	    unsigned height = 1;
+	unsigned height = 1;
         unsigned getHeight();
         int balanceFactor();
         void fixHeight();
