@@ -304,7 +304,7 @@ BinarySearchTree::Node *BinarySearchTree::Node::EraseAdvance(Node *target)
             rt_subtree = rt_subtree -> left;
         }
         target -> keyValuePair = rt_subtree -> keyValuePair;
-        target -> right = EraseAdvance(target -> right);
+        rt_subtree -> parent -> right = EraseAdvance(rt_subtree);
         if (target)
         {
             target -> fixHeight();
